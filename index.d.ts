@@ -5,6 +5,7 @@ declare module 'feathers' {
     before(hooks: hooks.HookMap);
     after(hooks: hooks.HookMap);
     hooks(hooks: hooks.HooksObject);
+    filter(fn: <T>(data: T, connection: any, hook: HookProps<T>) => T);
   }
 }
 
